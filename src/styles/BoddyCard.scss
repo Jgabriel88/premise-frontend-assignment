@@ -1,0 +1,15 @@
+@import './variables.css';
+
+div.boddyCard {
+	padding-left: 1rem;
+}
+
+.boddyTitlte {
+	color: var(--card-title-text);
+	margin-bottom: 0px;
+}
+
+.subText {
+	color: var(--card-subtext);
+	margin-top: 0px;
+}

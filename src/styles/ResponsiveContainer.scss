@@ -9,6 +9,7 @@ $mintrack: 200px;
 	grid-template-columns: repeat(5, 1fr);
 	padding: $spacing;
 }
+
 @media (max-width: 1545px) {
 	.container {
 		grid-template-columns: repeat(4, 1fr);
