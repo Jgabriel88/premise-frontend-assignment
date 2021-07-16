@@ -2,13 +2,13 @@ import Card from '../UI/Card';
 import CommonButtonGroup from './CommonButtonGroup';
 import { sampleData } from '../../data/sampleData';
 import FooterCard from './FooterCard';
+import HeaderCard from './HeaderCard';
 
 const ResposiveContainer = (props) => {
 	let eachCard = props.data.map((data) => {
 		return (
 			<Card key={data.id}>
-				<h1>{data.name}</h1>
-				<h3>{data.originType} Origin</h3>
+				<HeaderCard originType={data.originType} />
 				<p>{data.intents}</p>
 				<CommonButtonGroup />
 				<FooterCard dateUpdated={data.dateUpdated} />
