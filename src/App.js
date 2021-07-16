@@ -1,10 +1,11 @@
 import ResposiveContainer from './components/Layout/ResponsiveContainer';
 import './styles/variables.css';
+import { sampleData } from './data/sampleData';
 
 function App() {
 	return (
 		<div className="App">
-			<ResposiveContainer />
+			<ResposiveContainer data={sampleData} />
 		</div>
 	);
 }
