@@ -1,10 +1,11 @@
 import CommonButton from '../UI/CommonButton';
 import './Search.scss';
+import '../UI/CommonButton.scss';
 
 const Search = (props) => {
 	return (
 		<div>
-			<CommonButton className="SearchButton" type="submit">
+			<CommonButton className="searchButton" type="submit">
 				Search{' '}
 			</CommonButton>
 		</div>
