@@ -1,3 +1,5 @@
+import '../../styles/FooterCard.scss';
+
 const FooterCard = (props) => {
 	const formattedDate = new Intl.DateTimeFormat('en-US', {
 		year: 'numeric',
@@ -10,9 +12,11 @@ const FooterCard = (props) => {
 	}).format(props.dateUpdated);
 
 	return (
-		<div>
-			Last Updated {formattedDate} @ {formattedHour}
-		</div>
+		<footer>
+			<p className="dateUpdated">
+				Last Updated {formattedDate} @ {formattedHour}
+			</p>
+		</footer>
 	);
 };
 

@@ -2,10 +2,13 @@ $spacing: 1.25rem;
 $mintrack: 200px;
 
 .container {
-	width: 100%;
+	align-self: center;
+	justify-self: center;
+	max-width: 1310px;
 	display: grid;
 	grid-auto-flow: dense;
-	grid-gap: 1px;
+	row-gap: 10px;
+	column-gap: 10px;
 	grid-template-columns: repeat(5, 1fr);
 	padding: $spacing;
 }

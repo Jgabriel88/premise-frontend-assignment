@@ -1,0 +1,20 @@
+@import './variables.css';
+
+footer {
+	display: inline;
+	justify-self: flex-end;
+}
+
+.dateUpdated {
+	padding-top: 2rem;
+	padding-left: 1rem;
+	display: inline-block;
+	font-size: 11px;
+	align-self: flex-end;
+	justify-self: center;
+	color: var(--card-subtext);
+}
+
+p {
+	align-self: center;
+}
