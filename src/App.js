@@ -1,15 +1,23 @@
-import "./styles/variables.css";
+import './styles/variables.css';
+import { sampleData } from './data/sampleData';
+import Card from './components/UI/Card';
 
 function App() {
-  return (
-    <div className="App">
-      {/* Add Responsive container component here. Render the card components inside of that component.  */}
-      <div>
-        Replace me with a responsive container component to hold the group of
-        cards!
-      </div>
-    </div>
-  );
+	let eachCard = sampleData.map((data) => {
+		return (
+			<Card>
+				<h1>{data.name}</h1>
+				<p>{data.intents}</p>
+			</Card>
+		);
+	});
+
+	return (
+		<div className="App">
+			{/* Add Responsive container component here. Render the card components inside of that component.  */}
+			<div>{eachCard}</div>
+		</div>
+	);
 }
 
 export default App;

@@ -3,6 +3,10 @@ const CommonButton = (props) => {
 		<button
 			type={props.type || 'button'}
 			className={`${props.className}`}
-			onClick={props.onClick}></button>
+			onClick={props.onClick}>
+			{props.children}
+		</button>
 	);
 };
+
+export default CommonButton;
