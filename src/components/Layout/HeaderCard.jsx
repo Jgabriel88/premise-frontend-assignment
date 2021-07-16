@@ -1,4 +1,4 @@
-import '../../styles/HeaderCard.scss';
+import './HeaderCard.scss';
 
 const HeaderCard = (props) => {
 	let originClass = '';

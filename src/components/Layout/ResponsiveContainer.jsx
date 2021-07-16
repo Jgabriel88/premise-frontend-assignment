@@ -3,7 +3,7 @@ import CommonButtonGroup from './CommonButtonGroup';
 import FooterCard from './FooterCard';
 import HeaderCard from './HeaderCard';
 import BoddyCard from './BoddyCard';
-import '../../styles/ResponsiveContainer.scss';
+import './ResponsiveContainer.scss';
 
 const ResposiveContainer = (props) => {
 	let eachCard = props.data.map((data) => {

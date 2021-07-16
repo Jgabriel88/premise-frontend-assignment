@@ -1,4 +1,4 @@
-import '../../styles/BoddyCard.scss';
+import './BoddyCard.scss';
 
 const BoddyCard = (props) => {
 	return (

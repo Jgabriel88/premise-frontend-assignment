@@ -1,5 +1,5 @@
 import CommonButton from '../UI/CommonButton';
-import '../../styles/CommonButtonGroup.scss';
+import './CommonButtonGroup.scss';
 
 const CommonButtonGroup = () => {
 	return (

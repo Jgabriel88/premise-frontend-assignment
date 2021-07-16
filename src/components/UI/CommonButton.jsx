@@ -1,4 +1,4 @@
-import '../../styles/CommonButton.scss';
+import './CommonButton.scss';
 
 const CommonButton = (props) => {
 	return (

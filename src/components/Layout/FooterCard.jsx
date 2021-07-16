@@ -1,4 +1,4 @@
-import '../../styles/FooterCard.scss';
+import './FooterCard.scss';
 
 const FooterCard = (props) => {
 	const formattedDate = new Intl.DateTimeFormat('en-US', {
