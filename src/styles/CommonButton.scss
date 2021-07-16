@@ -1,0 +1,18 @@
+@import './variables.css';
+
+button {
+	border-radius: 36px;
+	width: 85px;
+	height: 25px;
+	background-color: transparent;
+}
+
+.viewButton {
+	color: var(--view-btn-color);
+	border-color: var(--view-btn-color);
+}
+
+.removeButton {
+	color: var(--remove-btn-color);
+	border-color: var(--view-btn-color);
+}

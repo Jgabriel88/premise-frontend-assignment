@@ -1,3 +1,5 @@
+import '../../styles/CommonButton.scss';
+
 const CommonButton = (props) => {
 	return (
 		<>

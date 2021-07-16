@@ -4,7 +4,7 @@ const CommonButtonGroup = () => {
 	return (
 		<div>
 			<CommonButton className="viewButton">View</CommonButton>
-			<CommonButton className="removeButton">Cancel</CommonButton>
+			<CommonButton className="removeButton">Remove</CommonButton>
 		</div>
 	);
 };

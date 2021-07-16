@@ -1,9 +1,9 @@
 import Card from '../UI/Card';
 import CommonButtonGroup from './CommonButtonGroup';
-import { sampleData } from '../../data/sampleData';
 import FooterCard from './FooterCard';
 import HeaderCard from './HeaderCard';
 import BoddyCard from './BoddyCard';
+import '../../styles/ResponsiveContainer.scss';
 
 const ResposiveContainer = (props) => {
 	let eachCard = props.data.map((data) => {
