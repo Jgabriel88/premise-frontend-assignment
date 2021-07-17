@@ -1,15 +1,17 @@
+import React from 'react';
 import './FooterCard.scss';
 
 const FooterCard = (props) => {
+	const { dateUpdated } = props;
 	const formattedDate = new Intl.DateTimeFormat('en-US', {
 		year: 'numeric',
 		month: 'short',
 		day: '2-digit',
-	}).format(props.dateUpdated);
+	}).format(dateUpdated);
 	const formattedHour = new Intl.DateTimeFormat('en-US', {
 		hour: '2-digit',
 		minute: '2-digit',
-	}).format(props.dateUpdated);
+	}).format(dateUpdated);
 
 	return (
 		<footer>
@@ -20,4 +22,4 @@ const FooterCard = (props) => {
 	);
 };
 
-export default FooterCard;
+export default React.memo(FooterCard);

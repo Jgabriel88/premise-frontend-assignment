@@ -1,16 +1,16 @@
+import React from 'react';
 import './CommonButton.scss';
 
 const CommonButton = (props) => {
+	const { type, className, onClick, children } = props;
 	return (
-		<>
-			<button
-				type={props.type || 'button'}
-				className={`${props.className}`}
-				onClick={props.onClick}>
-				{props.children}
-			</button>
-		</>
+		<button
+			type={type || 'button'}
+			className={`${className}`}
+			onClick={onClick}>
+			{children}
+		</button>
 	);
 };
 
-export default CommonButton;
+export default React.memo(CommonButton);

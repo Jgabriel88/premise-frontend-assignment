@@ -12,3 +12,9 @@ span {
 .originManual {
 	color: var(--manual-origin-text);
 }
+
+.headerContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}

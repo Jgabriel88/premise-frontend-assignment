@@ -1,12 +1,14 @@
+import React from 'react';
 import './BoddyCard.scss';
 
 const BoddyCard = (props) => {
+	const { skillName, intents } = props;
 	return (
 		<div className="boddyCard">
-			<h3 className="boddyTitlte">{props.skillName}</h3>
-			<p className="subText">{props.intents}</p>
+			<h3 className="boddyTitlte">{skillName}</h3>
+			<p className="subText">{intents}</p>
 		</div>
 	);
 };
 
-export default BoddyCard;
+export default React.memo(BoddyCard);

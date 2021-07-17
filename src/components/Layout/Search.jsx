@@ -1,3 +1,4 @@
+import React from 'react';
 import CommonButton from '../UI/CommonButton';
 import './Search.scss';
 import '../UI/CommonButton.scss';
@@ -12,4 +13,4 @@ const Search = (props) => {
 	);
 };
 
-export default Search;
+export default React.memo(Search);

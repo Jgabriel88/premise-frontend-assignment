@@ -1,3 +1,4 @@
+import React from 'react';
 import Card from '../UI/Card';
 import CommonButtonGroup from './CommonButtonGroup';
 import FooterCard from './FooterCard';
@@ -6,17 +7,18 @@ import BoddyCard from './BoddyCard';
 import './ResponsiveContainer.scss';
 
 const ResposiveContainer = (props) => {
-	let eachCard = props.data.map((data) => {
+	const { data } = props;
+	let eachCard = data.map((rachData) => {
 		return (
-			<Card key={data.id}>
-				<HeaderCard originType={data.originType} />
-				<BoddyCard skillName={data.name} intents={data.intents} />
+			<Card key={rachData.id}>
+				<HeaderCard originType={rachData.originType} />
+				<BoddyCard skillName={rachData.name} intents={rachData.intents} />
 				<CommonButtonGroup />
-				<FooterCard dateUpdated={data.dateUpdated} />
+				<FooterCard dateUpdated={rachData.dateUpdated} />
 			</Card>
 		);
 	});
 	return <div className="container">{eachCard}</div>;
 };
 
-export default ResposiveContainer;
+export default React.memo(ResposiveContainer);

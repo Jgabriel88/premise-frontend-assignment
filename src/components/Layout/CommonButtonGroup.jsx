@@ -1,3 +1,4 @@
+import React from 'react';
 import CommonButton from '../UI/CommonButton';
 import './CommonButtonGroup.scss';
 
@@ -10,4 +11,4 @@ const CommonButtonGroup = () => {
 	);
 };
 
-export default CommonButtonGroup;
+export default React.memo(CommonButtonGroup);
