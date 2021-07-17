@@ -6,7 +6,7 @@ const Search = (props) => {
 	return (
 		<div>
 			<CommonButton className="searchButton" type="submit">
-				Search{' '}
+				Search
 			</CommonButton>
 		</div>
 	);
