@@ -4,6 +4,7 @@ import './styles/variables.css';
 import './styles/index.css';
 import { sampleData } from './data/sampleData';
 import Nav from './components/Layout/Nav';
+
 let filteredData = {};
 
 function App() {
@@ -14,15 +15,16 @@ function App() {
 	};
 
 	useEffect(() => {
-		filteredData = sampleData.filter((card) => card.name.match(input));
+		filteredData = sampleData.filter((card) =>
+			card.name.toLowerCase().match(input.toLocaleLowerCase())
+		);
 	}, [input]);
 
-	console.log(sampleData.length);
 	return (
 		<div className="App">
 			<Nav onChangeHandler={onChangeHanlder} />
-			{/* {filteredData.length && <ResposiveContainer data={filteredData} />} */}
-			<ResposiveContainer data={sampleData} />
+			{filteredData.length && <ResposiveContainer data={filteredData} />}
+			{/* <ResposiveContainer data={sampleData} /> */}
 		</div>
 	);
 }
