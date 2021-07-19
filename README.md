@@ -31,5 +31,3 @@
 ## 📷 Screenshots
 
 <img src="https://github.com/Jgabriel88/premise-frontend-assignment/blob/main/Documents/Card_Search.gif?raw=true" alt="screenshot">
-
-{"mode":"full","isActive":false}
