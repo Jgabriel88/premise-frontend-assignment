@@ -28,3 +28,8 @@ body {
 	align-content: center;
 	justify-content: center;
 }
+
+div#root {
+	width: 100%;
+	min-width: 550px;
+}
