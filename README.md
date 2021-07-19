@@ -1,6 +1,6 @@
 <!-- TITLE -->
 <div align="center">
-<img src="public/music.png" width="150px">
+
 <p>
 <p>Challenfe for PremiseHQ SaaS Inc.
 </p>
@@ -29,5 +29,7 @@
 4. Visit <a href="http://localhost:3000/">http://localhost:3000/</a> on your browser
 
 ## 📷 Screenshots
+
+<img src="https://github.com/Jgabriel88/premise-frontend-assignment/blob/main/Documents/Card_Search.gif?raw=true" alt="screenshot">
 
 {"mode":"full","isActive":false}
