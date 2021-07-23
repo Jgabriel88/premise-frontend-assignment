@@ -3,12 +3,12 @@ import './FooterCard.scss';
 
 const FooterCard = (props) => {
 	const { dateUpdated } = props;
-	const formatedDate = new Intl.DateTimeFormat('en-US', {
+	const formattedDate = new Intl.DateTimeFormat('en-US', {
 		year: 'numeric',
 		month: 'short',
 		day: '2-digit',
 	}).format(dateUpdated);
-	const formatedHour = new Intl.DateTimeFormat('en-US', {
+	const formattedHour = new Intl.DateTimeFormat('en-US', {
 		hour: '2-digit',
 		minute: '2-digit',
 	}).format(dateUpdated);
@@ -16,7 +16,7 @@ const FooterCard = (props) => {
 	return (
 		<footer>
 			<p className="dateUpdated">
-				Last Updated {formatedDate} @ {formatedHour}
+				Last Updated {formattedDate} @ {formattedHour}
 			</p>
 		</footer>
 	);
