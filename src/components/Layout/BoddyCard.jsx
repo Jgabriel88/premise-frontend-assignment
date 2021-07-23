@@ -6,7 +6,7 @@ const BoddyCard = (props) => {
 	return (
 		<div className="boddyCard">
 			<h3 className="boddyTitlte">{skillName}</h3>
-			<p className="subText">{intents}</p>
+			<p className="subText">{intents} intents</p>
 		</div>
 	);
 };

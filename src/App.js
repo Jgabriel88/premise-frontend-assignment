@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ResposiveContainer from './components/Layout/ResponsiveContainer';
 import './styles/variables.css';
 import './styles/index.css';
